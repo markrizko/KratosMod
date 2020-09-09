@@ -1,4 +1,4 @@
-package SatanParlor.cards;
+package SatanParlor.powers;
 
 /*
 Power plays one specific card at the start of turn. 

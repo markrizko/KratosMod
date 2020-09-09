@@ -30,5 +30,12 @@
       ".",
       "Select a card to bottle for "
     ]
+  },
+  "SatanParlor:rage": {
+    "NAME": "Rage of Sparta",
+    "FLAVOR": "Let the Rage of Sparta fuel your blade!",
+    "DESCRIPTIONS": [
+      "At the start of combat, gain 2 strength for every blade of chaos in your deck."
+    ]
   }
 }

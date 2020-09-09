@@ -1,5 +1,6 @@
 package SatanParlor;
 
+import SatanParlor.relics.*;
 import basemod.BaseMod;
 import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
@@ -25,10 +26,6 @@ import SatanParlor.cards.*;
 import SatanParlor.characters.TheDefault;
 import SatanParlor.events.IdentityCrisisEvent;
 import SatanParlor.potions.PlaceholderPotion;
-import SatanParlor.relics.BottledPlaceholderRelic;
-import SatanParlor.relics.DefaultClickableRelic;
-import SatanParlor.relics.PlaceholderRelic;
-import SatanParlor.relics.PlaceholderRelic2;
 import SatanParlor.util.IDCheckDontTouchPls;
 import SatanParlor.util.TextureLoader;
 import SatanParlor.variables.DefaultCustomVariable;
@@ -376,6 +373,7 @@ public class DefaultMod implements
         
         // This adds a relic to the Shared pool. Every character can find this relic.
         BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
+        BaseMod.addRelic(new rage(), RelicType.SHARED);
         
         // Mark relics as seen (the others are all starters so they're marked as seen in the character file
         UnlockTracker.markRelicAsSeen(BottledPlaceholderRelic.ID);
@@ -418,6 +416,7 @@ public class DefaultMod implements
         BaseMod.addCard(new DefaultRareSkill());
         BaseMod.addCard(new DefaultRarePower());
         BaseMod.addCard(new rattle());
+        BaseMod.addCard(new clawsofhades());
         
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -438,6 +437,7 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(blades.ID);
         UnlockTracker.unlockCard(ablockalypse.ID);
         UnlockTracker.unlockCard(rattle.ID);
+        UnlockTracker.unlockCard(clawsofhades.ID);
         
         logger.info("Done adding cards!");
     }
