@@ -3,6 +3,10 @@
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
 },
+"SatanParlor:RattlePower":{
+        "NAME": "RATTLE",
+        "DESCRIPTIONS": ["At the start of your turn, #g(50%) Apply #yWeak or #yVulnerable to ", "ALL enemies", "a random enemy"]
+},
 "SatanParlor:RarePower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]

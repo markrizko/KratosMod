@@ -49,10 +49,9 @@ public class blades extends AbstractDynamicCard {
 
     public blades() { // public blades() - This one and the one right under the imports are the most important ones, don't forget them
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        baseDamage = DAMAGE;
-        this.baseMagicNumber = 5;
-        this.magicNumber = this.baseMagicNumber;
-        this.exhaust = true;
+        damage = baseDamage = DAMAGE;
+        magicNumber = baseMagicNumber = 5;
+        exhaust = true;
     }
 
 

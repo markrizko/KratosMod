@@ -54,6 +54,11 @@
     "NAME": "Cool 2 Number Card",
     "DESCRIPTION": "Apply !M! vulnerable and !SatanParlor:SecondMagic! poison to an enemy."
   },
+  "SatanParlor:rattle":{
+    "NAME": "Rattle",
+    "DESCRIPTION": "At the start of your turn, apply Vulnerable or Weak to a random enemy.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, apply Vulnerable or Weak to ALL enemies."
+  },
   "SatanParlor:OrbSkill": {
     "NAME": "Get Orb",
     "DESCRIPTION": "Channel 1 Default Orb."
