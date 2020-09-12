@@ -37,5 +37,10 @@
     "DESCRIPTIONS": [
       "At the start of combat, gain 2 strength for every blade of chaos in your deck."
     ]
+  },
+  "SatanParlor:chalice": {
+    "NAME": "Hera's Chalice",
+    "FLAVOR": "Curse received from destroying Hera's Garden.",
+    "DESCRIPTIONS": ["At the start of each turn, lose 1 HP until you only have 1 left."]
   }
 }

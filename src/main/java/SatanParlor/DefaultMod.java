@@ -374,6 +374,7 @@ public class DefaultMod implements
         // This adds a relic to the Shared pool. Every character can find this relic.
         BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
         BaseMod.addRelic(new rage(), RelicType.SHARED);
+        BaseMod.addRelic(new chalice(), RelicType.SHARED);
         
         // Mark relics as seen (the others are all starters so they're marked as seen in the character file
         UnlockTracker.markRelicAsSeen(BottledPlaceholderRelic.ID);
@@ -417,6 +418,7 @@ public class DefaultMod implements
         BaseMod.addCard(new DefaultRarePower());
         BaseMod.addCard(new rattle());
         BaseMod.addCard(new clawsofhades());
+        BaseMod.addCard(new conjuresoul());
         
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards

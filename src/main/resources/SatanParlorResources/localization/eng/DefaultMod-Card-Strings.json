@@ -66,5 +66,10 @@
   "SatanParlor:clawsofhades":{
   "NAME": "Claws of Hades",
   "DESCRIPTION": "Deal !D! damage. Heal unblocked damage."
-}
+},
+  "SatanParlor:conjuresoul": {
+    "NAME": "Conjure Soul",
+    "DESCRIPTION": "At the start of your turn, heal 3 and lose 2 Dexterity.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, heal 3 and lose 1 Dexterity."
+  }
 }
