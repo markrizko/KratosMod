@@ -419,6 +419,7 @@ public class DefaultMod implements
         BaseMod.addCard(new rattle());
         BaseMod.addCard(new clawsofhades());
         BaseMod.addCard(new conjuresoul());
+        BaseMod.addCard(new styx());
         
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -440,6 +441,8 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(ablockalypse.ID);
         UnlockTracker.unlockCard(rattle.ID);
         UnlockTracker.unlockCard(clawsofhades.ID);
+        UnlockTracker.unlockCard(conjuresoul.ID);
+        UnlockTracker.unlockCard(styx.ID);
         
         logger.info("Done adding cards!");
     }

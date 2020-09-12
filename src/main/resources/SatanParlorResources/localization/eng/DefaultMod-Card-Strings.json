@@ -71,5 +71,10 @@
     "NAME": "Conjure Soul",
     "DESCRIPTION": "At the start of your turn, heal 3 and lose 2 Dexterity.",
     "UPGRADE_DESCRIPTION": "At the start of your turn, heal 3 and lose 1 Dexterity."
+  },
+  "SatanParlor:styx": {
+    "NAME": "Styx Cleanse",
+    "DESCRIPTION": "Lose X max HP, gain X Intangible. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Lose X max HP, gain X Intangible."
   }
 }
