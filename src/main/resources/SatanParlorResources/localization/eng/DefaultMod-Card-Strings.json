@@ -76,5 +76,9 @@
     "NAME": "Styx Cleanse",
     "DESCRIPTION": "Lose X max HP, gain X Intangible. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Lose X max HP, gain X Intangible."
+  },
+  "SatanParlor:cyclone": {
+    "NAME": "Cyclone of Chaos",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Gain 1 [#ffff00]Vengeance.[]"
   }
 }
