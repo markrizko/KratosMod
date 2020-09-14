@@ -14,5 +14,9 @@
 "SatanParlor:conjure": {
         "NAME": "Conjure Soul",
         "DESCRIPTIONS": ["At the start of your turn, heal 3 and lose ", " dexterity."]
+},
+"SatanParlor:vengeance":{
+        "NAME": "Vengeance",
+        "DESCRIPTIONS": ["Every time you hit an enemy, gain ", " strength."]
 }
 }
