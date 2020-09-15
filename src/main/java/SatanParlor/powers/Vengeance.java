@@ -11,6 +11,8 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.patches.bothInterfaces.OnReceivePowerPatch;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.NewQueueCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -24,11 +26,14 @@ import SatanParlor.DefaultMod;
 import SatanParlor.cards.DefaultRareAttack;
 import SatanParlor.util.TextureLoader;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-public class vengeance extends AbstractPower implements CloneablePowerInterface {
+
+public class Vengeance extends AbstractPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = DefaultMod.makeID("vengeance");
+    public static final String POWER_ID = DefaultMod.makeID("Vengeance");
     // don't forget to add power to powerstrings
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
@@ -39,7 +44,7 @@ public class vengeance extends AbstractPower implements CloneablePowerInterface 
     private static final Texture tex84 = TextureLoader.getTexture("SatanParlorResources/images/powers/vengeance84.png");
     private static final Texture tex32 = TextureLoader.getTexture("SatanParlorResources/images/powers/vengeance32.png");
 
-    public vengeance(final AbstractCreature owner, final AbstractCreature source, final int amount) {
+    public Vengeance(final AbstractCreature owner, final AbstractCreature source, final int amount) {
         name = NAME;
         ID = POWER_ID;
 
@@ -64,15 +69,17 @@ public class vengeance extends AbstractPower implements CloneablePowerInterface 
     }
 
     @Override
-    public void atEndOfTurn(boolean isPlayer) {
-        if (amount != 0){
-            amount--;
-        }
+    public void updateDescription() {
+        description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
 
     @Override
-    public void updateDescription() {
-        description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
+    public void atEndOfRound() {
+        if (this.amount == 0) {
+            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, this));
+        } else {
+            AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(owner, owner, this, 1));
+        }
     }
 
     @Override

@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.potions.DuplicationPotion;
 import com.megacrit.cardcrawl.powers.DuplicationPower;
 import com.megacrit.cardcrawl.vfx.ObtainPotionEffect;
 
+
 import static SatanParlor.DefaultMod.makeRelicOutlinePath;
 import static SatanParlor.DefaultMod.makeRelicPath;
 
