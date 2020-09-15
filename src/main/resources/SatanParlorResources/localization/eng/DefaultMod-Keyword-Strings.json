@@ -1,10 +1,9 @@
 [
   {
     "NAMES": [
-      "keyword",
-      "keywords"
+      "vengeance"
     ],
-    "DESCRIPTION": "Whenever you play a card, gain 1 dexterity this turn only."
+    "DESCRIPTION": "Every time you hit an enemy, gain strength based on amount of Vengeance."
   },
   {
     "PROPER_NAME": "Multiword Keyword",
