@@ -35,13 +35,13 @@
     "NAME": "Rage of Sparta",
     "FLAVOR": "Let the Rage of Sparta fuel your blade!",
     "DESCRIPTIONS": [
-      "At the start of combat, gain 2 strength for every blade of chaos in your deck."
+      "At the start of combat, gain #b2 #yStrength for every blade of chaos in your deck."
     ]
   },
   "SatanParlor:chalice": {
     "NAME": "Hera's Chalice",
     "FLAVOR": "Curse received from destroying Hera's Garden.",
-    "DESCRIPTIONS": ["At the start of each turn, lose 1 HP until you only have 1 left."]
+    "DESCRIPTIONS": ["At the start of each turn, lose #b1 HP until you only have #b1 left."]
   },
   "SatanParlor:amulet": {
     "NAME": "Persephone's Amulet",
@@ -52,5 +52,10 @@
     "NAME": "Minotaur Horn",
     "FLAVOR": "Straight from the source",
     "DESCRIPTIONS": ["The first card of each combat is played twice"]
+  },
+  "SatanParlor:eagle": {
+    "NAME": "Zeus's Eagle",
+    "FLAVOR": "I will have my vengeance!",
+    "DESCRIPTIONS": ["Start each combat with #b1 #yVengeance."]
   }
 }

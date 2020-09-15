@@ -377,6 +377,7 @@ public class DefaultMod implements
         BaseMod.addRelic(new chalice(), RelicType.SHARED);
         BaseMod.addRelic(new amulet(), RelicType.SHARED);
         BaseMod.addRelic(new minohorn(), RelicType.SHARED);
+        BaseMod.addRelic(new eagle(), RelicType.SHARED);
         
         // Mark relics as seen (the others are all starters so they're marked as seen in the character file
         UnlockTracker.markRelicAsSeen(BottledPlaceholderRelic.ID);
@@ -384,6 +385,7 @@ public class DefaultMod implements
         UnlockTracker.markRelicAsSeen(chalice.ID);
         UnlockTracker.markRelicAsSeen(amulet.ID);
         UnlockTracker.markRelicAsSeen(minohorn.ID);
+        UnlockTracker.markRelicAsSeen(eagle.ID);
 
         logger.info("Done adding relics!");
     }
