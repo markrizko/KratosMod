@@ -47,5 +47,10 @@
     "NAME": "Persephone's Amulet",
     "FLAVOR": "Receive the blessing of the Underworld.",
     "DESCRIPTIONS": ["Every time you heal, heal ", " more."]
+  },
+  "SatanParlor:minohorn": {
+    "NAME": "Minotaur Horn",
+    "FLAVOR": "Straight from the source",
+    "DESCRIPTIONS": ["The first card of each combat is played twice"]
   }
 }
