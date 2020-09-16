@@ -430,6 +430,7 @@ public class DefaultMod implements
         BaseMod.addCard(new conjuresoul());
         BaseMod.addCard(new styx());
         BaseMod.addCard(new cyclone());
+        BaseMod.addCard(new tartarusrage());
         
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -454,6 +455,7 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(conjuresoul.ID);
         UnlockTracker.unlockCard(styx.ID);
         UnlockTracker.unlockCard(cyclone.ID);
+        UnlockTracker.unlockCard(tartarusrage.ID);
 
         logger.info("Done adding cards!");
     }

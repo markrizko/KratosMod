@@ -62,6 +62,7 @@ public class Vengeance extends AbstractPower implements CloneablePowerInterface 
         updateDescription();
     }
 
+
     @Override
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         flash();
