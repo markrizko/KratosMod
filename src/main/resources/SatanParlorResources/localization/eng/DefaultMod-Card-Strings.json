@@ -84,5 +84,9 @@
   "SatanParlor:tartarusrage": {
     "NAME": "Tartarus Rage",
     "DESCRIPTION": "Deal !D! for each stack of Vengeance. NL (Deals !D! x !M!)"
+  },
+  "SatanParlor:settle": {
+    "NAME": "Settle",
+    "DESCRIPTION": "Lose 2 Vengeance. Gain 2 Energy. NL Exhaust."
   }
 }

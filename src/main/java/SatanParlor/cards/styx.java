@@ -56,8 +56,10 @@ public class styx extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new styxAction(p, this.upgraded, freeToPlayOnce, energyOnUse));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, energyOnUse), energyOnUse));
-                // action here
+        if (energyOnUse != 0){
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, energyOnUse), energyOnUse));
+        }
+        // action here
     }
 
 
