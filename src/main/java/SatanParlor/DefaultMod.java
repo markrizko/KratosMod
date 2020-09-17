@@ -1,5 +1,6 @@
 package SatanParlor;
 
+import SatanParlor.events.HerasGardenEvent;
 import SatanParlor.relics.*;
 import basemod.BaseMod;
 import basemod.ModLabeledToggleButton;
@@ -15,6 +16,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.Exordium;
 import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
@@ -25,6 +27,7 @@ import org.apache.logging.log4j.Logger;
 import SatanParlor.cards.*;
 import SatanParlor.characters.TheDefault;
 import SatanParlor.events.IdentityCrisisEvent;
+import SatanParlor.events.HerasGardenEvent;
 import SatanParlor.potions.PlaceholderPotion;
 import SatanParlor.util.IDCheckDontTouchPls;
 import SatanParlor.util.TextureLoader;
@@ -336,6 +339,7 @@ public class DefaultMod implements
         // If you want to have a character-specific event, look at slimebound (CityRemoveEventPatch).
         // Essentially, you need to patch the game and say "if a player is not playing my character class, remove the event from the pool"
         BaseMod.addEvent(IdentityCrisisEvent.ID, IdentityCrisisEvent.class, TheCity.ID);
+        BaseMod.addEvent(HerasGardenEvent.ID, HerasGardenEvent.class, Exordium.ID);
         
         // =============== /EVENTS/ =================
         logger.info("Done loading badge Image and mod options");
