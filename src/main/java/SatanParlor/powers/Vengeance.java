@@ -76,7 +76,7 @@ public class Vengeance extends AbstractPower implements CloneablePowerInterface 
 
     @Override
     public void atEndOfRound() {
-        if (this.amount == 0) {
+        if (this.amount <= 0) {
             AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, this));
         } else {
             AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(owner, owner, this, 1));
