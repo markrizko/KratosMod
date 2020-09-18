@@ -5,7 +5,7 @@
 },
 "SatanParlor:RattlePower":{
         "NAME": "RATTLE",
-        "DESCRIPTIONS": ["At the start of your turn, #g(50%) Apply #yWeak or #yVulnerable to ", "ALL enemies", "a random enemy"]
+        "DESCRIPTIONS": ["At the start of your turn, #g(50%) Apply Weak or remove 1 Strength to ", "ALL enemies", "a random enemy"]
 },
 "SatanParlor:RarePower": {
         "NAME": "Placeholder Power",

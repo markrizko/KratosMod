@@ -20,12 +20,10 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.*;
 import SatanParlor.DefaultMod;
 import SatanParlor.cards.DefaultRareAttack;
 import SatanParlor.util.TextureLoader;
-import com.megacrit.cardcrawl.powers.VulnerablePower;
-import com.megacrit.cardcrawl.powers.WeakPower;
 
 import java.util.Iterator;
 
@@ -72,7 +70,8 @@ public class RattlePower extends AbstractPower implements CloneablePowerInterfac
            }
            else{
                // apply vulnerable
-               AbstractDungeon.actionManager.addToBottom(new ApplyPowerToRandomEnemyAction(owner,new VulnerablePower(owner,1,false), 1, true, AbstractGameAction.AttackEffect.NONE));
+               AbstractDungeon.actionManager.addToBottom(new ApplyPowerToRandomEnemyAction(owner, new StrengthPower(owner, -1), -1, false, AbstractGameAction.AttackEffect.NONE));
+//               AbstractDungeon.actionManager.addToBottom(new ApplyPowerToRandomEnemyAction(owner,new VulnerablePower(owner,1,false), 1, true, AbstractGameAction.AttackEffect.NONE));
            }
        }
        else{
@@ -87,7 +86,8 @@ public class RattlePower extends AbstractPower implements CloneablePowerInterfac
            else{
                while(var1.hasNext()){
                    AbstractMonster m = (AbstractMonster)var1.next();
-                   AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, owner, new VulnerablePower(owner, 1, false), 1));
+                   AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, owner, new StrengthPower(owner, -1), -1, false, AbstractGameAction.AttackEffect.NONE));
+//                   AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, owner, new VulnerablePower(owner, 1, false), 1));
                }
            }
        }

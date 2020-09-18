@@ -56,8 +56,8 @@
   },
   "SatanParlor:rattle":{
     "NAME": "Rattle",
-    "DESCRIPTION": "At the start of your turn, apply Vulnerable or Weak to a random enemy.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, apply Vulnerable or Weak to ALL enemies."
+    "DESCRIPTION": "At the start of your turn, remove 1 Strength or apply Weak to a random enemy.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, remove 1 Strength or apply Weak to ALL enemies."
   },
   "SatanParlor:OrbSkill": {
     "NAME": "Get Orb",

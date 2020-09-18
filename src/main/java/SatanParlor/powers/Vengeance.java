@@ -87,4 +87,12 @@ public class Vengeance extends AbstractPower implements CloneablePowerInterface 
     public AbstractPower makeCopy() {
         return new RarePower(owner, source, amount);
     }
+
+    @Override
+    public void update(int slot) {
+        super.update(slot);
+        if (amount <= 0){
+            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, this));
+        }
+    }
 }
