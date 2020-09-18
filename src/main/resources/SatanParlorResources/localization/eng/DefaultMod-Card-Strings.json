@@ -5,7 +5,7 @@
   },
   "SatanParlor:ablockalypse": {
     "NAME": "Ablockalypse!",
-    "DESCRIPTION": "Gain !B! Block. NL Gain 5 Vulnerable. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL Gain 3 Vulnerable. NL Exhaust."
   },
   "SatanParlor:DefaultCommonSkill": {
     "NAME": "Defend",
@@ -13,7 +13,7 @@
   },
   "SatanParlor:blades": {
     "NAME": "Blades of Chaos",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Apply !M! Weak. NL Apply !M! Vulnerable. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage and apply !M! Weak to ALL enemies. NL Gain !M! Vengeance. NL Exhaust."
   },
   "SatanParlor:DefaultCommonPower": {
     "NAME": "Hold Place",

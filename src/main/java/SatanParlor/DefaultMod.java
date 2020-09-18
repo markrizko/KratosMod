@@ -29,6 +29,7 @@ import SatanParlor.characters.TheDefault;
 import SatanParlor.events.IdentityCrisisEvent;
 import SatanParlor.events.HerasGardenEvent;
 import SatanParlor.potions.PlaceholderPotion;
+import SatanParlor.potions.angerpot;
 import SatanParlor.util.IDCheckDontTouchPls;
 import SatanParlor.util.TextureLoader;
 import SatanParlor.variables.DefaultCustomVariable;
@@ -357,6 +358,7 @@ public class DefaultMod implements
         // just remove the player class at the end (in this case the "TheDefaultEnum.THE_DEFAULT".
         // Remember, you can press ctrl+P inside parentheses like addPotions)
         BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, TheDefault.Enums.THE_DEFAULT);
+        BaseMod.addPotion(angerpot.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, angerpot.POTION_ID, TheDefault.Enums.THE_DEFAULT);
         
         logger.info("Done editing potions");
     }

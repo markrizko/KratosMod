@@ -41,7 +41,7 @@
   "SatanParlor:chalice": {
     "NAME": "Hera's Chalice",
     "FLAVOR": "Curse received from destroying Hera's Garden.",
-    "DESCRIPTIONS": ["At the start of each turn, lose #b1 HP until you only have #b1 left."]
+    "DESCRIPTIONS": ["#pCurse #pof #pthe #pChalice: At the start of each turn, lose #b1 HP until you only have #b1 left."]
   },
   "SatanParlor:amulet": {
     "NAME": "Persephone's Amulet",

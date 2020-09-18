@@ -1,6 +1,7 @@
 package SatanParlor.cards;
 
 import SatanParlor.patches.SatanTags;
+import SatanParlor.powers.Vengeance;
 import basemod.helpers.BaseModCardTags;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -41,10 +42,10 @@ public class blades extends AbstractDynamicCard {
     public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
 
     private static final int COST = 4;
-    private static final int UPGRADED_COST = 4;
+    private static final int UPGRADED_COST = 3;
 
-    private static final int DAMAGE = 50;
-    private static final int UPGRADE_PLUS_DMG = 25;
+    private static final int DAMAGE = 25;
+    private static final int UPGRADE_PLUS_DMG = 15;
 
     // /STAT DECLARATION/
 
@@ -52,7 +53,7 @@ public class blades extends AbstractDynamicCard {
     public blades() { // public blades() - This one and the one right under the imports are the most important ones, don't forget them
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         damage = baseDamage = DAMAGE;
-        magicNumber = baseMagicNumber = 5;
+        magicNumber = baseMagicNumber = 3;
         exhaust = true;
         this.tags.add(SatanTags.BLADES);
     }
@@ -63,13 +64,14 @@ public class blades extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
 
         AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new Vengeance(p, p, magicNumber), magicNumber));
 
         Iterator var3 = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
 
         while(var3.hasNext()) {
             AbstractMonster mo = (AbstractMonster)var3.next();
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new WeakPower(mo, magicNumber, false), magicNumber, true, AbstractGameAction.AttackEffect.NONE));
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new VulnerablePower(mo, magicNumber, false), magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+            // AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new VulnerablePower(mo, magicNumber, false), magicNumber, true, AbstractGameAction.AttackEffect.NONE));
         }
     }
 

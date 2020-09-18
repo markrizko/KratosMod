@@ -34,11 +34,11 @@ public class ablockalypse extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.SKILL;       //
     public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
 
-    private static final int COST = 5;
-    private static final int UPGRADED_COST = 7;
+    private static final int COST = 2;
+    private static final int UPGRADED_COST = 3;
 
-    private static final int TOTAL = 60;
-    private static final int UPGRADE_PLUS_TOTAL = 40;
+    private static final int TOTAL = 35;
+    private static final int UPGRADE_PLUS_TOTAL = 25;
 
 
     // /STAT DECLARATION/
@@ -56,7 +56,7 @@ public class ablockalypse extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p,p,block));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p,p, new VulnerablePower(p,5, false), 5));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p,p, new VulnerablePower(p,3, false), 5));
                 // action here
     }
 

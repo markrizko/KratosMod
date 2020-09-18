@@ -18,5 +18,9 @@
 "SatanParlor:Vengeance":{
         "NAME": "Vengeance",
         "DESCRIPTIONS": ["Every time you hit an enemy, gain ", " strength."]
+},
+"SatanParlor:LoseVengeance": {
+        "NAME": "Calming Down",
+        "DESCRIPTIONS": ["At the end of your turn, lose ", " Vengeance."]
 }
 }
