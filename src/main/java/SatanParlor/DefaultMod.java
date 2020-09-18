@@ -5,6 +5,7 @@ import SatanParlor.relics.*;
 import basemod.BaseMod;
 import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
+import basemod.devcommands.unlock.Unlock;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
@@ -438,6 +439,7 @@ public class DefaultMod implements
         BaseMod.addCard(new cyclone());
         BaseMod.addCard(new tartarusrage());
         BaseMod.addCard(new settle());
+        BaseMod.addCard(new kBerserk());
         
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -464,6 +466,7 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(cyclone.ID);
         UnlockTracker.unlockCard(tartarusrage.ID);
         UnlockTracker.unlockCard(settle.ID);
+        UnlockTracker.unlockCard(kBerserk.ID);
 
         logger.info("Done adding cards!");
     }

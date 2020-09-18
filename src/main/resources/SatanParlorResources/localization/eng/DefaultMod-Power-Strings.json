@@ -22,5 +22,9 @@
 "SatanParlor:LoseVengeance": {
         "NAME": "Calming Down",
         "DESCRIPTIONS": ["At the end of your turn, lose ", " Vengeance."]
+},
+"SatanParlor:kratosBerserk": {
+        "NAME": "Berserk",
+        "DESCRIPTIONS": ["At the start of your turn, gain ", ""]
 }
 }

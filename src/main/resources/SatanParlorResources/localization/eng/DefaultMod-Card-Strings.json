@@ -88,5 +88,9 @@
   "SatanParlor:settle": {
     "NAME": "Settle",
     "DESCRIPTION": "Lose 2 Vengeance. Gain 2 Energy. NL Exhaust."
+  },
+  "SatanParlor:kBerserk":{
+    "NAME": "Berserk",
+    "DESCRIPTION": "Gain !M! Vulnerable. At the start of your turn, gain [R]."
   }
 }
