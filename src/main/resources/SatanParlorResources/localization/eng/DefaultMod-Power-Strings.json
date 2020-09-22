@@ -30,5 +30,9 @@
 "SatanParlor:FullCounterPower": {
         "NAME": "Full Counter",
         "DESCRIPTIONS": ["Redirect the next ", "attack ", "attacks ","back on the enemy."]
+},
+"SatanParlor:Evade": {
+        "NAME": "Evade",
+        "DESCRIPTIONS": ["Evade the next ", "attack.", "attacks."]
 }
 }

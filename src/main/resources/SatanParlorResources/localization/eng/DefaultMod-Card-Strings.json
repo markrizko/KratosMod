@@ -97,5 +97,9 @@
     "NAME": "Full Counter!",
     "DESCRIPTION": "Redirect the next attack. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Redirect the next 2 attacks. NL Exhaust."
+  },
+  "SatanParlor:Roll": {
+    "NAME": "Roll",
+    "DESCRIPTION": "Gain !M! Evade. Gain 2 Frail."
   }
 }

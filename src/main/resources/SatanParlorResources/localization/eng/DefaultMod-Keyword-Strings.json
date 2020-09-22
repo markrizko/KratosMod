@@ -6,6 +6,12 @@
     "DESCRIPTION": "Every time you hit an enemy, gain strength based on amount of Vengeance."
   },
   {
+    "NAMES": [
+      "evade"
+    ],
+    "DESCRIPTION": "Evade the next attack."
+  },
+  {
     "PROPER_NAME": "Multiword Keyword",
     "NAMES": [
       "Multiword Keyword",
