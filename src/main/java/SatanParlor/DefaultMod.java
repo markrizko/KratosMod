@@ -440,6 +440,7 @@ public class DefaultMod implements
         BaseMod.addCard(new tartarusrage());
         BaseMod.addCard(new settle());
         BaseMod.addCard(new kBerserk());
+        BaseMod.addCard(new FullCounter());
         
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -467,6 +468,7 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(tartarusrage.ID);
         UnlockTracker.unlockCard(settle.ID);
         UnlockTracker.unlockCard(kBerserk.ID);
+        UnlockTracker.unlockCard(FullCounter.ID);
 
         logger.info("Done adding cards!");
     }

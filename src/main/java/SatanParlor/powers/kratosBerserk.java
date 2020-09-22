@@ -72,6 +72,7 @@ public class kratosBerserk extends AbstractPower implements CloneablePowerInterf
         sb.append(LocalizedStrings.PERIOD);
         description = sb.toString();
     }
+    
 
     @Override
     public AbstractPower makeCopy() {

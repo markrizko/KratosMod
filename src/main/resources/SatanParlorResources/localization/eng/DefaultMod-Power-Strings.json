@@ -26,5 +26,9 @@
 "SatanParlor:kratosBerserk": {
         "NAME": "Berserk",
         "DESCRIPTIONS": ["At the start of your turn, gain ", ""]
+},
+"SatanParlor:FullCounterPower": {
+        "NAME": "Full Counter",
+        "DESCRIPTIONS": ["Redirect the next ", "attack ", "attacks ","back on the enemy."]
 }
 }

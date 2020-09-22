@@ -92,5 +92,10 @@
   "SatanParlor:kBerserk":{
     "NAME": "Berserk",
     "DESCRIPTION": "Gain !M! Vulnerable. At the start of your turn, gain [R]."
+  },
+  "SatanParlor:FullCounter": {
+    "NAME": "Full Counter!",
+    "DESCRIPTION": "Redirect the next attack. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Redirect the next 2 attacks. NL Exhaust."
   }
 }
