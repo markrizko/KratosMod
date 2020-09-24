@@ -101,5 +101,9 @@
   "SatanParlor:Roll": {
     "NAME": "Roll",
     "DESCRIPTION": "Gain !M! Evade. Gain 2 Frail."
+  },
+  "SatanParlor:Endure": {
+    "NAME": "Endure",
+    "DESCRIPTION": "Gain !M! Block. Draw 1 for each stack of Vengeance."
   }
 }

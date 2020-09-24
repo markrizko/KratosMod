@@ -442,7 +442,8 @@ public class DefaultMod implements
         BaseMod.addCard(new kBerserk());
         BaseMod.addCard(new FullCounter());
         BaseMod.addCard(new Roll());
-        
+        BaseMod.addCard(new Endure());
+
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
         // This is so that they are all "seen" in the library, for people who like to look at the card list
@@ -471,6 +472,7 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(kBerserk.ID);
         UnlockTracker.unlockCard(FullCounter.ID);
         UnlockTracker.unlockCard(Roll.ID);
+        UnlockTracker.unlockCard(Endure.ID);
 
         logger.info("Done adding cards!");
     }
