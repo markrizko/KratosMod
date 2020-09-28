@@ -14,6 +14,10 @@ import static SatanParlor.DefaultMod.makeCardPath;
 
 public class rattle extends AbstractDynamicCard {
 
+    /* UNCOMMON POWER
+        Rattle: At the start of your turn, remove 1 Strengh or apply 1 Weak to a random (ALL) enemies.
+     */
+
     // TEXT DECLARATION
 
     public static final String ID = DefaultMod.makeID(rattle.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;

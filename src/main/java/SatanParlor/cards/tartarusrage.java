@@ -16,6 +16,9 @@ import static SatanParlor.DefaultMod.makeCardPath;
 // public class tartarusrage extends AbstractDynamicCard
 public class tartarusrage extends AbstractDynamicCard {
 
+    /* RARE ATTACK
+        ( 3 ) Tartarus Rage: Deal 3 (+2) damage for each stack of Vengeance.
+     */
 
     // TEXT DECLARATION
 

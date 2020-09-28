@@ -16,6 +16,12 @@ import static SatanParlor.DefaultMod.makeCardPath;
 public class cyclone extends AbstractDynamicCard {
 
 
+    /*
+    STARTER ATTACK
+        ( 1 ) Cyclone of Chaos: Deal 5 (+3) damage to ALL enemies. Gain 1 Vengeance.
+     */
+
+
 
     // TEXT DECLARATION
 

@@ -19,6 +19,9 @@ import static SatanParlor.DefaultMod.makeCardPath;
 
 public class settle extends AbstractDynamicCard {
 
+    /* UNCOMMON SKILL
+       ( 1 - 1 ) Settle: Lose 2 Vengeance. Gain 2 Energy. Exhaust.
+     */
 
     // TEXT DECLARATION
 

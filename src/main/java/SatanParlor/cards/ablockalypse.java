@@ -16,6 +16,11 @@ import static SatanParlor.DefaultMod.makeCardPath;
 
 public class ablockalypse extends AbstractDynamicCard {
 
+    /*
+    RARE SKILL
+        ( 2 + 1 ) Ablockalypse: Gain 35 + 25 block. Gain 3 Vulnerable. Exhaust.
+     */
+
 
     // TEXT DECLARATION
 

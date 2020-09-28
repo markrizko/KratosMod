@@ -18,6 +18,12 @@ import static SatanParlor.DefaultMod.makeCardPath;
 
 public class Endure extends AbstractDynamicCard {
 
+/*
+COMMON SKILL
+    ( 1 ) Endure: Gain 7 (+4) block. Draw 1 for each stack of Vengeance.
+ */
+
+
 
     // TEXT DECLARATION
 

@@ -16,6 +16,10 @@ import static SatanParlor.DefaultMod.makeCardPath;
 
 public class Roll extends AbstractDynamicCard {
 
+    /* COMMON SKILL
+        Roll: Gain 1 (+1) evade. Gain 2 Frail.
+     */
+
 
     // TEXT DECLARATION
 

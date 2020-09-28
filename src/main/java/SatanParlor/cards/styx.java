@@ -19,6 +19,11 @@ import static SatanParlor.DefaultMod.makeCardPath;
 public class styx extends AbstractDynamicCard {
 
 
+    /* RARE SKILL
+        ( X ) Styx Cleanse: Lose X max HP, gain X intangible. NL Exhaust.
+     */
+
+
     // TEXT DECLARATION
 
     public static final String ID = DefaultMod.makeID(styx.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;

@@ -24,6 +24,13 @@ import static SatanParlor.DefaultMod.makeCardPath;
 public class blades extends AbstractDynamicCard {
 
 
+    /*
+    RARE ATTACK
+        ( 4 - 1 ) Blades of Chaos: Deal 25 (+15) damage.
+        Apply 3 Weak. Gain 3 Vengeance. Exhaust.
+     */
+
+
     // TEXT DECLARATION
 
     public static final String ID = DefaultMod.makeID(blades.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;

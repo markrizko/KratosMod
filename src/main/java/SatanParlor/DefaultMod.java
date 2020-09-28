@@ -422,8 +422,8 @@ public class DefaultMod implements
         BaseMod.addCard(new DefaultSecondMagicNumberSkill());
         BaseMod.addCard(new DefaultCommonAttack());
         BaseMod.addCard(new DefaultAttackWithVariable());
-        BaseMod.addCard(new blades());
-        BaseMod.addCard(new ablockalypse());
+        BaseMod.addCard(new blades()); // rare attack
+        BaseMod.addCard(new ablockalypse()); // rare skill
         BaseMod.addCard(new DefaultCommonSkill());
         BaseMod.addCard(new DefaultCommonPower());
         BaseMod.addCard(new DefaultUncommonSkill());
@@ -432,17 +432,18 @@ public class DefaultMod implements
         BaseMod.addCard(new DefaultRareAttack());
         BaseMod.addCard(new DefaultRareSkill());
         BaseMod.addCard(new DefaultRarePower());
-        BaseMod.addCard(new rattle());
-        BaseMod.addCard(new clawsofhades());
-        BaseMod.addCard(new conjuresoul());
-        BaseMod.addCard(new styx());
-        BaseMod.addCard(new cyclone());
-        BaseMod.addCard(new tartarusrage());
-        BaseMod.addCard(new settle());
-        BaseMod.addCard(new kBerserk());
-        BaseMod.addCard(new FullCounter());
-        BaseMod.addCard(new Roll());
-        BaseMod.addCard(new Endure());
+        BaseMod.addCard(new rattle()); // uncommon power
+        BaseMod.addCard(new clawsofhades()); // uncommon attack
+        BaseMod.addCard(new conjuresoul()); // uncommon power
+        BaseMod.addCard(new styx()); // rare skill
+        BaseMod.addCard(new cyclone()); // starter attack
+        BaseMod.addCard(new tartarusrage()); // rare attack
+        BaseMod.addCard(new settle()); // uncommon skill
+        BaseMod.addCard(new kBerserk()); // rare power
+        BaseMod.addCard(new FullCounter()); // rare colorless skill
+        BaseMod.addCard(new Roll()); // common skill
+        BaseMod.addCard(new Endure()); // common skill
+        BaseMod.addCard(new Tempor()); // common skill
 
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -473,6 +474,7 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(FullCounter.ID);
         UnlockTracker.unlockCard(Roll.ID);
         UnlockTracker.unlockCard(Endure.ID);
+        UnlockTracker.unlockCard(Tempor.ID);
 
         logger.info("Done adding cards!");
     }

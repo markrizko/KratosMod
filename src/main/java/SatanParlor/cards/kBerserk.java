@@ -17,6 +17,11 @@ import static SatanParlor.DefaultMod.makeCardPath;
 
 public class kBerserk extends AbstractDynamicCard {
 
+
+    /* RARE POWER
+        ( 0 ) Berserk: Gain 2 (-1) Vulnerable. At the start of your turn, gain 1 energy.
+     */
+
     // TEXT DECLARATION
 
     public static final String ID = DefaultMod.makeID(kBerserk.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;

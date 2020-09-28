@@ -16,6 +16,12 @@ import static SatanParlor.DefaultMod.makeCardPath;
 public class clawsofhades extends AbstractDynamicCard {
     
 
+    /*
+    UNCOMMON ATTACK
+        ( 2 ) Claws of Hades: Deal 10 (+5) damage. Heal unblocked damage dealt.
+     */
+
+
     // TEXT DECLARATION
 
     public static final String ID = DefaultMod.makeID(clawsofhades.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;

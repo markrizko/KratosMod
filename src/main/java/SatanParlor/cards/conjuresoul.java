@@ -17,6 +17,13 @@ import static SatanParlor.DefaultMod.makeCardPath;
 
 public class conjuresoul extends AbstractDynamicCard {
 
+    /*
+    UNCOMMON POWER
+        ( 2 ) Conjure Soul: At the start of your turn, heal 3 and lose 2 (-1) dexterity.
+     */
+
+
+
     // TEXT DECLARATION
 
     public static final String ID = DefaultMod.makeID(conjuresoul.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;
