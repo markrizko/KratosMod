@@ -1,5 +1,6 @@
 package SatanParlor.cards;
 
+import SatanParlor.characters.Kratos;
 import SatanParlor.powers.RattlePower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -37,7 +38,7 @@ public class rattle extends AbstractDynamicCard {
     private static final CardTarget TARGET = CardTarget.SELF;  //   since they don't change much.
     private static final CardType TYPE = CardType.POWER;       //
     // default color, change manually
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = Kratos.Enums.COLOR_RAGE;
 
     private static final int COST = 2;
     private static final int UPGRADED_COST = 2;

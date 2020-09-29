@@ -104,11 +104,19 @@
   },
   "SatanParlor:Endure": {
     "NAME": "Endure",
-    "DESCRIPTION": "Gain !M! Block. Draw 1 for each stack of Vengeance."
+    "DESCRIPTION": "Gain !B! Block. Draw 1 for each stack of Vengeance."
   },
   "SatanParlor:Tempor": {
     "NAME": "Tempor",
     "DESCRIPTION": "Gain !M! Vengeance. Discard the top card of your draw pile.",
     "UPGRADE_DESCRIPTION": "Gain !M! Vengeance. Discard the top 2 cards of your draw pile."
+  },
+  "SatanParlor:Strike_K": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "SatanParlor:Defend_K": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
   }
 }

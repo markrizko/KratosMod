@@ -1,5 +1,6 @@
 package SatanParlor.cards;
 
+import SatanParlor.characters.Kratos;
 import SatanParlor.powers.Evade;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -36,7 +37,7 @@ public class Roll extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.COMMON; //  Up to you, I like auto-complete on these
     private static final CardTarget TARGET = CardTarget.SELF;  //   since they don't change much.
     private static final CardType TYPE = CardType.SKILL;       //
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = Kratos.Enums.COLOR_RAGE;
 
     private static final int COST = 2;
 

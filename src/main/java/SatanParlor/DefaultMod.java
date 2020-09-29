@@ -1,5 +1,6 @@
 package SatanParlor;
 
+import SatanParlor.characters.Kratos;
 import SatanParlor.events.HerasGardenEvent;
 import SatanParlor.relics.*;
 import basemod.BaseMod;
@@ -88,15 +89,16 @@ public class DefaultMod implements
     public static boolean enablePlaceholder = true; // The boolean we'll be setting on/off (true/false)
 
     //This is for the in-game mod settings panel.
-    private static final String MODNAME = "Default Mod";
-    private static final String AUTHOR = "Gremious"; // And pretty soon - You!
-    private static final String DESCRIPTION = "A base for Slay the Spire to start your own mod from, feat. the Default.";
+    private static final String MODNAME = "Satan's Parlor Expansion";
+    private static final String AUTHOR = "HoboCentral"; // And pretty soon - You!
+    private static final String DESCRIPTION = "Creating Kratos character from God of War and a shop to purchase his cards/relics.";
     
     // =============== INPUT TEXTURE LOCATION =================
     
     // Colors (RGB)
     // Character Color
     public static final Color DEFAULT_GRAY = CardHelper.getColor(64.0f, 70.0f, 70.0f);
+    public static final Color KRATOS_RAGE = CardHelper.getColor(159.0f, 75.0f, 29.0f);
     
     // Potion Colors in RGB
     public static final Color PLACEHOLDER_POTION_LIQUID = CardHelper.getColor(209.0f, 53.0f, 18.0f); // Orange-ish Red
@@ -114,14 +116,26 @@ public class DefaultMod implements
     private static final String ATTACK_DEFAULT_GRAY = "SatanParlorResources/images/512/bg_attack_default_gray.png";
     private static final String SKILL_DEFAULT_GRAY = "SatanParlorResources/images/512/bg_skill_default_gray.png";
     private static final String POWER_DEFAULT_GRAY = "SatanParlorResources/images/512/bg_power_default_gray.png";
+    // kratos cardbacks
+    private static final String ATTACK_KRATOS_GRAY = "SatanParlorResources/images/512/bg_attack_kratos.png";
+    private static final String SKILL_KRATOS_GRAY = "SatanParlorResources/images/512/bg_skill_kratos.png";
+    private static final String POWER_KRATOS_GRAY = "SatanParlorResources/images/512/bg_power_kratos.png";
     
     private static final String ENERGY_ORB_DEFAULT_GRAY = "SatanParlorResources/images/512/card_default_gray_orb.png";
     private static final String CARD_ENERGY_ORB = "SatanParlorResources/images/512/card_small_orb.png";
+    // kratos energy orbs
+    private static final String ENERGY_ORB_KRATOS = "SatanParlorResources/images/512/card_kratos_orb.png";
+    private static final String CARD_ENERGY_ORB_KR = "SatanParlorResources/images/512/card_kratos_small_orb.png";
     
     private static final String ATTACK_DEFAULT_GRAY_PORTRAIT = "SatanParlorResources/images/1024/bg_attack_default_gray.png";
     private static final String SKILL_DEFAULT_GRAY_PORTRAIT = "SatanParlorResources/images/1024/bg_skill_default_gray.png";
     private static final String POWER_DEFAULT_GRAY_PORTRAIT = "SatanParlorResources/images/1024/bg_power_default_gray.png";
     private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "SatanParlorResources/images/1024/card_default_gray_orb.png";
+    // kratos portrait cardbacks
+    static final String ATTACK_KRATOS_PORTRAIT = "SatanParlorResources/images/1024/bg_attack_kratos.png";
+    private static final String SKILL_KRATOS_PORTRAIT = "SatanParlorResources/images/1024/bg_skill_kratos.png";
+    private static final String POWER_KRATOS_PORTRAIT = "SatanParlorResources/images/1024/bg_power_kratos.png";
+    private static final String ENERGY_ORB_KRATOS_PORTRAIT = "SatanParlorResources/images/1024/card_kratos_orb.png";
     
     // Character assets
     private static final String THE_DEFAULT_BUTTON = "SatanParlorResources/images/charSelect/DefaultCharacterButton.png";
@@ -129,6 +143,8 @@ public class DefaultMod implements
     public static final String THE_DEFAULT_SHOULDER_1 = "SatanParlorResources/images/char/defaultCharacter/shoulder.png";
     public static final String THE_DEFAULT_SHOULDER_2 = "SatanParlorResources/images/char/defaultCharacter/shoulder2.png";
     public static final String THE_DEFAULT_CORPSE = "SatanParlorResources/images/char/defaultCharacter/corpse.png";
+    // kratos assets
+    private static final String KRATOS_BUTTON = "SatanParlorResources/images/charSelect/KratosCharacterButton.png";
     
     //Mod Badge - A small icon that appears in the mod settings menu next to your mod.
     public static final String BADGE_IMAGE = "SatanParlorResources/images/Badge.png";
@@ -202,14 +218,22 @@ public class DefaultMod implements
         logger.info("Done subscribing");
         
         logger.info("Creating the color " + TheDefault.Enums.COLOR_GRAY.toString());
-        
+        logger.info("Creating the color " + Kratos.Enums.COLOR_RAGE.toString());
+
+        // kratos color
+        BaseMod.addColor(Kratos.Enums.COLOR_RAGE, KRATOS_RAGE,  KRATOS_RAGE, KRATOS_RAGE,
+                KRATOS_RAGE, KRATOS_RAGE, KRATOS_RAGE, KRATOS_RAGE,
+                ATTACK_KRATOS_GRAY, SKILL_KRATOS_GRAY, POWER_KRATOS_GRAY, ENERGY_ORB_KRATOS,
+                ATTACK_KRATOS_PORTRAIT, SKILL_KRATOS_PORTRAIT, POWER_KRATOS_PORTRAIT,
+                ENERGY_ORB_KRATOS_PORTRAIT, CARD_ENERGY_ORB_KR);
+        // default color
         BaseMod.addColor(TheDefault.Enums.COLOR_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
                 DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
                 ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
                 ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
                 ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
         
-        logger.info("Done creating the color");
+        logger.info("Done creating the colors");
         
         
         logger.info("Adding mod settings");
@@ -290,6 +314,8 @@ public class DefaultMod implements
         
         BaseMod.addCharacter(new TheDefault("the Default", TheDefault.Enums.THE_DEFAULT),
                 THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, TheDefault.Enums.THE_DEFAULT);
+
+        BaseMod.addCharacter(new Kratos("Kratos", Kratos.Enums.KRATOS), KRATOS_BUTTON, THE_DEFAULT_PORTRAIT, Kratos.Enums.KRATOS);
         
         receiveEditPotions();
         logger.info("Added " + TheDefault.Enums.THE_DEFAULT.toString());
@@ -444,6 +470,8 @@ public class DefaultMod implements
         BaseMod.addCard(new Roll()); // common skill
         BaseMod.addCard(new Endure()); // common skill
         BaseMod.addCard(new Tempor()); // common skill
+        BaseMod.addCard(new Strike_K()); // starter strike
+        BaseMod.addCard(new Defend_K()); // starter defend
 
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -475,6 +503,8 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(Roll.ID);
         UnlockTracker.unlockCard(Endure.ID);
         UnlockTracker.unlockCard(Tempor.ID);
+        UnlockTracker.unlockCard(Strike_K.ID);
+        UnlockTracker.unlockCard(Defend_K.ID);
 
         logger.info("Done adding cards!");
     }

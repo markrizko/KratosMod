@@ -1,5 +1,6 @@
 package SatanParlor.cards;
 
+import SatanParlor.characters.Kratos;
 import SatanParlor.patches.SatanTags;
 import SatanParlor.powers.Vengeance;
 import basemod.helpers.BaseModCardTags;
@@ -46,7 +47,7 @@ public class blades extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.RARE; //  Up to you, I like auto-complete on these
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;  //   since they don't change much.
     private static final CardType TYPE = CardType.ATTACK;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = Kratos.Enums.COLOR_RAGE;
 
     private static final int COST = 4;
     private static final int UPGRADED_COST = 3;
