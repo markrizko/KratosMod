@@ -118,5 +118,9 @@
   "SatanParlor:Defend_K": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
+  },
+  "SatanParlor:BladeWhip": {
+    "NAME": "Blade Whip",
+    "DESCRIPTION": "Deal !D! damage !M! times."
   }
 }

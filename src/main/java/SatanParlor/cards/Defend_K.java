@@ -45,7 +45,7 @@ public class Defend_K extends AbstractDynamicCard {
     public Defend_K() { // public Defend_K() - This one and the one right under the imports are the most important ones, don't forget them
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         //baseBUFF/BLOCK = 5;
-        baseBlock = TOTAL;
+        block = baseBlock = TOTAL;
     }
 
 

@@ -472,6 +472,7 @@ public class DefaultMod implements
         BaseMod.addCard(new Tempor()); // common skill
         BaseMod.addCard(new Strike_K()); // starter strike
         BaseMod.addCard(new Defend_K()); // starter defend
+        BaseMod.addCard(new BladeWhip()); // common attack
 
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -505,6 +506,7 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(Tempor.ID);
         UnlockTracker.unlockCard(Strike_K.ID);
         UnlockTracker.unlockCard(Defend_K.ID);
+        UnlockTracker.unlockCard(BladeWhip.ID);
 
         logger.info("Done adding cards!");
     }
