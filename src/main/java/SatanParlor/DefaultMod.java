@@ -113,24 +113,24 @@ public class DefaultMod implements
     // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
   
     // Card backgrounds - The actual rectangular card.
-    private static final String ATTACK_DEFAULT_GRAY = "SatanParlorResources/images/512/bg_attack_default_gray.png";
-    private static final String SKILL_DEFAULT_GRAY = "SatanParlorResources/images/512/bg_skill_default_gray.png";
-    private static final String POWER_DEFAULT_GRAY = "SatanParlorResources/images/512/bg_power_default_gray.png";
+    //private static final String ATTACK_DEFAULT_GRAY = "SatanParlorResources/images/512/bg_attack_default_gray.png";
+    //private static final String SKILL_DEFAULT_GRAY = "SatanParlorResources/images/512/bg_skill_default_gray.png";
+    //private static final String POWER_DEFAULT_GRAY = "SatanParlorResources/images/512/bg_power_default_gray.png";
     // kratos cardbacks
     private static final String ATTACK_KRATOS_GRAY = "SatanParlorResources/images/512/bg_attack_kratos.png";
     private static final String SKILL_KRATOS_GRAY = "SatanParlorResources/images/512/bg_skill_kratos.png";
     private static final String POWER_KRATOS_GRAY = "SatanParlorResources/images/512/bg_power_kratos.png";
     
-    private static final String ENERGY_ORB_DEFAULT_GRAY = "SatanParlorResources/images/512/card_default_gray_orb.png";
-    private static final String CARD_ENERGY_ORB = "SatanParlorResources/images/512/card_small_orb.png";
+    //private static final String ENERGY_ORB_DEFAULT_GRAY = "SatanParlorResources/images/512/card_default_gray_orb.png";
+    //private static final String CARD_ENERGY_ORB = "SatanParlorResources/images/512/card_small_orb.png";
     // kratos energy orbs
     private static final String ENERGY_ORB_KRATOS = "SatanParlorResources/images/512/card_kratos_orb.png";
     private static final String CARD_ENERGY_ORB_KR = "SatanParlorResources/images/512/card_kratos_small_orb.png";
     
-    private static final String ATTACK_DEFAULT_GRAY_PORTRAIT = "SatanParlorResources/images/1024/bg_attack_default_gray.png";
-    private static final String SKILL_DEFAULT_GRAY_PORTRAIT = "SatanParlorResources/images/1024/bg_skill_default_gray.png";
-    private static final String POWER_DEFAULT_GRAY_PORTRAIT = "SatanParlorResources/images/1024/bg_power_default_gray.png";
-    private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "SatanParlorResources/images/1024/card_default_gray_orb.png";
+    //private static final String ATTACK_DEFAULT_GRAY_PORTRAIT = "SatanParlorResources/images/1024/bg_attack_default_gray.png";
+    //private static final String SKILL_DEFAULT_GRAY_PORTRAIT = "SatanParlorResources/images/1024/bg_skill_default_gray.png";
+   //private static final String POWER_DEFAULT_GRAY_PORTRAIT = "SatanParlorResources/images/1024/bg_power_default_gray.png";
+    //private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "SatanParlorResources/images/1024/card_default_gray_orb.png";
     // kratos portrait cardbacks
     static final String ATTACK_KRATOS_PORTRAIT = "SatanParlorResources/images/1024/bg_attack_kratos.png";
     private static final String SKILL_KRATOS_PORTRAIT = "SatanParlorResources/images/1024/bg_skill_kratos.png";
@@ -145,7 +145,8 @@ public class DefaultMod implements
     public static final String THE_DEFAULT_CORPSE = "SatanParlorResources/images/char/defaultCharacter/corpse.png";
     // kratos assets
     private static final String KRATOS_BUTTON = "SatanParlorResources/images/charSelect/KratosCharacterButton.png";
-    
+    private static final String KRATOS_PORTRAIT = "SatanParlorResources/images/charSelect/KratosCharacterPortrait.png";
+
     //Mod Badge - A small icon that appears in the mod settings menu next to your mod.
     public static final String BADGE_IMAGE = "SatanParlorResources/images/Badge.png";
     
@@ -227,12 +228,12 @@ public class DefaultMod implements
                 ATTACK_KRATOS_PORTRAIT, SKILL_KRATOS_PORTRAIT, POWER_KRATOS_PORTRAIT,
                 ENERGY_ORB_KRATOS_PORTRAIT, CARD_ENERGY_ORB_KR);
         // default color
-        BaseMod.addColor(TheDefault.Enums.COLOR_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
+        /*BaseMod.addColor(TheDefault.Enums.COLOR_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
                 DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
                 ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
                 ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
                 ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
-        
+        */
         logger.info("Done creating the colors");
         
         
@@ -312,10 +313,10 @@ public class DefaultMod implements
     public void receiveEditCharacters() {
         logger.info("Beginning to edit characters. " + "Add " + TheDefault.Enums.THE_DEFAULT.toString());
         
-        BaseMod.addCharacter(new TheDefault("the Default", TheDefault.Enums.THE_DEFAULT),
+        /*BaseMod.addCharacter(new TheDefault("the Default", TheDefault.Enums.THE_DEFAULT),
                 THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, TheDefault.Enums.THE_DEFAULT);
-
-        BaseMod.addCharacter(new Kratos("Kratos", Kratos.Enums.KRATOS), KRATOS_BUTTON, THE_DEFAULT_PORTRAIT, Kratos.Enums.KRATOS);
+        */
+        BaseMod.addCharacter(new Kratos("Kratos", Kratos.Enums.KRATOS), KRATOS_BUTTON, KRATOS_PORTRAIT, Kratos.Enums.KRATOS);
         
         receiveEditPotions();
         logger.info("Added " + TheDefault.Enums.THE_DEFAULT.toString());
@@ -366,7 +367,7 @@ public class DefaultMod implements
         // part of the game, simply don't include the dungeon ID
         // If you want to have a character-specific event, look at slimebound (CityRemoveEventPatch).
         // Essentially, you need to patch the game and say "if a player is not playing my character class, remove the event from the pool"
-        BaseMod.addEvent(IdentityCrisisEvent.ID, IdentityCrisisEvent.class, TheCity.ID);
+        //BaseMod.addEvent(IdentityCrisisEvent.ID, IdentityCrisisEvent.class, TheCity.ID);
         BaseMod.addEvent(HerasGardenEvent.ID, HerasGardenEvent.class, Exordium.ID);
         
         // =============== /EVENTS/ =================
@@ -400,20 +401,20 @@ public class DefaultMod implements
         logger.info("Adding relics");
         
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
-        BaseMod.addRelicToCustomPool(new PlaceholderRelic(), TheDefault.Enums.COLOR_GRAY);
-        BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), TheDefault.Enums.COLOR_GRAY);
-        BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheDefault.Enums.COLOR_GRAY);
+       //BaseMod.addRelicToCustomPool(new PlaceholderRelic(), TheDefault.Enums.COLOR_GRAY);
+        //BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), TheDefault.Enums.COLOR_GRAY);
+        //BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheDefault.Enums.COLOR_GRAY);
+        BaseMod.addRelicToCustomPool(new rage(), Kratos.Enums.COLOR_RAGE);
+        BaseMod.addRelicToCustomPool(new eagle(), Kratos.Enums.COLOR_RAGE);
         
         // This adds a relic to the Shared pool. Every character can find this relic.
-        BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
-        BaseMod.addRelic(new rage(), RelicType.SHARED);
+        //BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
         BaseMod.addRelic(new chalice(), RelicType.SHARED);
         BaseMod.addRelic(new amulet(), RelicType.SHARED);
         BaseMod.addRelic(new minohorn(), RelicType.SHARED);
-        BaseMod.addRelic(new eagle(), RelicType.SHARED);
         
         // Mark relics as seen (the others are all starters so they're marked as seen in the character file
-        UnlockTracker.markRelicAsSeen(BottledPlaceholderRelic.ID);
+        //UnlockTracker.markRelicAsSeen(BottledPlaceholderRelic.ID);
         UnlockTracker.markRelicAsSeen(rage.ID);
         UnlockTracker.markRelicAsSeen(chalice.ID);
         UnlockTracker.markRelicAsSeen(amulet.ID);
@@ -444,20 +445,21 @@ public class DefaultMod implements
         // Don't comment out/delete these cards (yet). You need 1 of each type and rarity (technically) for your game not to crash
         // when generating card rewards/shop screen items.
         
-        BaseMod.addCard(new OrbSkill());
-        BaseMod.addCard(new DefaultSecondMagicNumberSkill());
-        BaseMod.addCard(new DefaultCommonAttack());
-        BaseMod.addCard(new DefaultAttackWithVariable());
+//        BaseMod.addCard(new OrbSkill());
+//        BaseMod.addCard(new DefaultSecondMagicNumberSkill());
+//        BaseMod.addCard(new DefaultCommonAttack());
+//        BaseMod.addCard(new DefaultAttackWithVariable());
+//        BaseMod.addCard(new DefaultCommonSkill());
+//        BaseMod.addCard(new DefaultCommonPower());
+//        BaseMod.addCard(new DefaultUncommonSkill());
+//        BaseMod.addCard(new DefaultUncommonAttack());
+//        BaseMod.addCard(new DefaultUncommonPower());
+//        BaseMod.addCard(new DefaultRareAttack());
+//        BaseMod.addCard(new DefaultRareSkill());
+//        BaseMod.addCard(new DefaultRarePower());
+
         BaseMod.addCard(new blades()); // rare attack
         BaseMod.addCard(new ablockalypse()); // rare skill
-        BaseMod.addCard(new DefaultCommonSkill());
-        BaseMod.addCard(new DefaultCommonPower());
-        BaseMod.addCard(new DefaultUncommonSkill());
-        BaseMod.addCard(new DefaultUncommonAttack());
-        BaseMod.addCard(new DefaultUncommonPower());
-        BaseMod.addCard(new DefaultRareAttack());
-        BaseMod.addCard(new DefaultRareSkill());
-        BaseMod.addCard(new DefaultRarePower());
         BaseMod.addCard(new rattle()); // uncommon power
         BaseMod.addCard(new clawsofhades()); // uncommon attack
         BaseMod.addCard(new conjuresoul()); // uncommon power
