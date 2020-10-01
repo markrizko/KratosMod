@@ -473,6 +473,8 @@ public class DefaultMod implements
         BaseMod.addCard(new Strike_K()); // starter strike
         BaseMod.addCard(new Defend_K()); // starter defend
         BaseMod.addCard(new BladeWhip()); // common attack
+        BaseMod.addCard(new Revenge()); // uncommon skill
+        BaseMod.addCard(new ShieldBash()); // common attack (Iron Wave)
 
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -507,6 +509,8 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(Strike_K.ID);
         UnlockTracker.unlockCard(Defend_K.ID);
         UnlockTracker.unlockCard(BladeWhip.ID);
+        UnlockTracker.unlockCard(Revenge.ID);
+        UnlockTracker.unlockCard(ShieldBash.ID);
 
         logger.info("Done adding cards!");
     }

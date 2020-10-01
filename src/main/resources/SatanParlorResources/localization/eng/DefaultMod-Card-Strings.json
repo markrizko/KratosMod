@@ -122,5 +122,13 @@
   "SatanParlor:BladeWhip": {
     "NAME": "Blade Whip",
     "DESCRIPTION": "Deal !D! damage !M! times."
+  },
+  "SatanParlor:Revenge":{
+    "NAME": "Revenge",
+    "DESCRIPTION": "Gain !SatanParlor:SecondMagic! Vengeance. Permanently increase by !M!. NL Exhaust."
+  },
+  "SatanParlor:ShieldBash": {
+    "NAME": "Shield Bash",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block."
   }
 }

@@ -65,8 +65,11 @@ public class Vengeance extends AbstractPower implements CloneablePowerInterface 
 
     @Override
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        flash();
-        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(owner, owner, new StrengthPower(owner, amount), amount));
+        if (info.type == DamageInfo.DamageType.NORMAL){
+            flash();
+            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(owner, owner, new StrengthPower(owner, amount), amount));
+        }
+
     }
 
     @Override
