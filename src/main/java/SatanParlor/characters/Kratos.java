@@ -81,7 +81,7 @@ public class Kratos extends CustomPlayer {
         super(name, setClass, orbTextures,
                 "SatanParlorResources/images/char/kratos/orb/vfx.png", null,
                 new SpriterAnimation(
-                        "SatanParlorResources/images/char/defaultCharacter/Spriter/theDefaultAnimation.scml"));
+                        "SatanParlorResources/images/char/kratos/Spriter/KratosAnimation.scml"));
 
         // =============== TEXTURES, ENERGY, LOADOUT =================
 
