@@ -34,5 +34,9 @@
 "SatanParlor:Evade": {
         "NAME": "Evade",
         "DESCRIPTIONS": ["Evade the next ", "attack.", "attacks."]
+},
+"SatanParlor:IcarusDive": {
+        "NAME": "Icarus Dive",
+        "DESCRIPTIONS": ["Every ", " turns, gain 1 Evade."]
 }
 }

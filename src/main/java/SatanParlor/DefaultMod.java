@@ -477,6 +477,7 @@ public class DefaultMod implements
         BaseMod.addCard(new BladeWhip()); // common attack
         BaseMod.addCard(new Revenge()); // uncommon skill
         BaseMod.addCard(new ShieldBash()); // common attack (Iron Wave)
+        BaseMod.addCard(new IcarusDiveCard()); // uncommon power
 
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -513,6 +514,7 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(BladeWhip.ID);
         UnlockTracker.unlockCard(Revenge.ID);
         UnlockTracker.unlockCard(ShieldBash.ID);
+        UnlockTracker.unlockCard(IcarusDiveCard.ID);
 
         logger.info("Done adding cards!");
     }
@@ -559,7 +561,7 @@ public class DefaultMod implements
         BaseMod.loadCustomStringsFile(OrbStrings.class,
                 getModID() + "Resources/localization/eng/DefaultMod-Orb-Strings.json");
         
-        logger.info("Done edittting strings");
+        logger.info("Done editing strings");
     }
     
     // ================ /LOAD THE TEXT/ ===================

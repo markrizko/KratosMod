@@ -54,7 +54,7 @@
     "NAME": "Cool 2 Number Card",
     "DESCRIPTION": "Apply !M! vulnerable and !SatanParlor:SecondMagic! poison to an enemy."
   },
-  "SatanParlor:rattle":{
+  "SatanParlor:rattle": {
     "NAME": "Rattle",
     "DESCRIPTION": "At the start of your turn, remove 1 Strength or apply Weak to a random enemy.",
     "UPGRADE_DESCRIPTION": "At the start of your turn, remove 1 Strength or apply Weak to ALL enemies."
@@ -63,10 +63,10 @@
     "NAME": "Get Orb",
     "DESCRIPTION": "Channel 1 Default Orb."
   },
-  "SatanParlor:clawsofhades":{
-  "NAME": "Claws of Hades",
-  "DESCRIPTION": "Deal !D! damage. Heal unblocked damage dealt."
-},
+  "SatanParlor:clawsofhades": {
+    "NAME": "Claws of Hades",
+    "DESCRIPTION": "Deal !D! damage. Heal unblocked damage dealt."
+  },
   "SatanParlor:conjuresoul": {
     "NAME": "Conjure Soul",
     "DESCRIPTION": "At the start of your turn, heal 3 and lose 2 Dexterity.",
@@ -89,7 +89,7 @@
     "NAME": "Settle",
     "DESCRIPTION": "Lose 2 Vengeance. Gain 2 [R]. NL Exhaust."
   },
-  "SatanParlor:kBerserk":{
+  "SatanParlor:kBerserk": {
     "NAME": "Berserk",
     "DESCRIPTION": "Gain !M! Vulnerable. At the start of your turn, gain [R]."
   },
@@ -123,12 +123,16 @@
     "NAME": "Blade Whip",
     "DESCRIPTION": "Deal !D! damage !M! times."
   },
-  "SatanParlor:Revenge":{
+  "SatanParlor:Revenge": {
     "NAME": "Revenge",
     "DESCRIPTION": "Gain !SatanParlor:SecondMagic! Vengeance. Permanently increase by !M!. NL Exhaust."
   },
   "SatanParlor:ShieldBash": {
     "NAME": "Shield Bash",
     "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block."
-  }
+  },
+  "SatanParlor:IcarusDiveCard":{
+  "NAME": "Icarus Dive",
+  "DESCRIPTION": "Every !M! turns, gain 1 Evade."
+}
 }
