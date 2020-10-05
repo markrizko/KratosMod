@@ -36,11 +36,9 @@ public class IcarusDive extends AbstractPower implements CloneablePowerInterface
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
     // make the textures mark
-    // TODO art
-//    private static final Texture tex84 = TextureLoader.getTexture("SatanParlorResources/images/powers/Icarus84.png");
-//    private static final Texture tex32 = TextureLoader.getTexture("SatanParlorResources/images/powers/Icarus32.png");
-    private static final Texture tex84 = TextureLoader.getTexture("SatanParlorResources/images/powers/rattle84.png");
-    private static final Texture tex32 = TextureLoader.getTexture("SatanParlorResources/images/powers/rattle32.png");
+    private static final Texture tex84 = TextureLoader.getTexture("SatanParlorResources/images/powers/IcarusDive84.png");
+    private static final Texture tex32 = TextureLoader.getTexture("SatanParlorResources/images/powers/IcarusDive32.png");
+
 
     public IcarusDive(final AbstractCreature owner, final int amount) {
         name = NAME;

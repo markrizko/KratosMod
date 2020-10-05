@@ -20,9 +20,7 @@ public class IcarusDiveCard extends AbstractDynamicCard {
     // TEXT DECLARATION
 
     public static final String ID = DefaultMod.makeID(IcarusDiveCard.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;
-    // TODO make art
-//    public static final String IMG = makeCardPath("IcarusDiveCard.png");
-    public static final String IMG = makeCardPath("Tempor.png");
+    public static final String IMG = makeCardPath("IcarusDiveCard.png");
     // This does mean that you will need to have an image with the same NAME as the card in your image folder for it to run correctly.
 
 
