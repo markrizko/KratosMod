@@ -478,23 +478,26 @@ public class DefaultMod implements
         BaseMod.addCard(new Revenge()); // uncommon skill
         BaseMod.addCard(new ShieldBash()); // common attack (Iron Wave)
         BaseMod.addCard(new IcarusDiveCard()); // uncommon power
+        BaseMod.addCard(new SmashStone());
 
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
         // This is so that they are all "seen" in the library, for people who like to look at the card list
         // before playing your mod.
-        UnlockTracker.unlockCard(OrbSkill.ID);
-        UnlockTracker.unlockCard(DefaultSecondMagicNumberSkill.ID);
-        UnlockTracker.unlockCard(DefaultCommonAttack.ID);
-        UnlockTracker.unlockCard(DefaultAttackWithVariable.ID);
-        UnlockTracker.unlockCard(DefaultCommonSkill.ID);
-        UnlockTracker.unlockCard(DefaultCommonPower.ID);
-        UnlockTracker.unlockCard(DefaultUncommonSkill.ID);
-        UnlockTracker.unlockCard(DefaultUncommonAttack.ID);
-        UnlockTracker.unlockCard(DefaultUncommonPower.ID);
-        UnlockTracker.unlockCard(DefaultRareAttack.ID);
-        UnlockTracker.unlockCard(DefaultRareSkill.ID);
-        UnlockTracker.unlockCard(DefaultRarePower.ID);
+//        UnlockTracker.unlockCard(OrbSkill.ID);
+//        UnlockTracker.unlockCard(DefaultSecondMagicNumberSkill.ID);
+//        UnlockTracker.unlockCard(DefaultCommonAttack.ID);
+//        UnlockTracker.unlockCard(DefaultAttackWithVariable.ID);
+//        UnlockTracker.unlockCard(DefaultCommonSkill.ID);
+//        UnlockTracker.unlockCard(DefaultCommonPower.ID);
+//        UnlockTracker.unlockCard(DefaultUncommonSkill.ID);
+//        UnlockTracker.unlockCard(DefaultUncommonAttack.ID);
+//        UnlockTracker.unlockCard(DefaultUncommonPower.ID);
+//        UnlockTracker.unlockCard(DefaultRareAttack.ID);
+//        UnlockTracker.unlockCard(DefaultRareSkill.ID);
+//        UnlockTracker.unlockCard(DefaultRarePower.ID);
+
+
         UnlockTracker.unlockCard(blades.ID);
         UnlockTracker.unlockCard(ablockalypse.ID);
         UnlockTracker.unlockCard(rattle.ID);
@@ -515,6 +518,7 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(Revenge.ID);
         UnlockTracker.unlockCard(ShieldBash.ID);
         UnlockTracker.unlockCard(IcarusDiveCard.ID);
+        UnlockTracker.unlockCard(SmashStone.ID);
 
         logger.info("Done adding cards!");
     }

@@ -134,5 +134,9 @@
   "SatanParlor:IcarusDiveCard":{
   "NAME": "Icarus Dive",
   "DESCRIPTION": "Every !M! turns, gain 1 Evade."
-}
+},
+  "SatanParlor:SmashStone": {
+    "NAME": "Health Stone",
+    "DESCRIPTION": "Unplayable. NL Ethereal. NL Heal !M! HP. NL Random enemy heals !M! HP."
+  }
 }
