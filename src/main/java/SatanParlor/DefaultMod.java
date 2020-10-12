@@ -458,6 +458,8 @@ public class DefaultMod implements
 //        BaseMod.addCard(new DefaultRareSkill());
 //        BaseMod.addCard(new DefaultRarePower());
 
+        BaseMod.addCard(new FullCounter()); // rare colorless skill
+
         BaseMod.addCard(new blades()); // rare attack
         BaseMod.addCard(new ablockalypse()); // rare skill
         BaseMod.addCard(new rattle()); // uncommon power
@@ -468,7 +470,6 @@ public class DefaultMod implements
         BaseMod.addCard(new tartarusrage()); // rare attack
         BaseMod.addCard(new settle()); // uncommon skill
         BaseMod.addCard(new kBerserk()); // rare power
-        BaseMod.addCard(new FullCounter()); // rare colorless skill
         BaseMod.addCard(new Roll()); // common skill
         BaseMod.addCard(new Endure()); // common skill
         BaseMod.addCard(new Tempor()); // common skill
@@ -478,7 +479,8 @@ public class DefaultMod implements
         BaseMod.addCard(new Revenge()); // uncommon skill
         BaseMod.addCard(new ShieldBash()); // common attack (Iron Wave)
         BaseMod.addCard(new IcarusDiveCard()); // uncommon power
-        BaseMod.addCard(new SmashStone());
+        BaseMod.addCard(new SmashStone()); // uncommon skill
+        BaseMod.addCard(new AthenaBane());
 
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -519,6 +521,7 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(ShieldBash.ID);
         UnlockTracker.unlockCard(IcarusDiveCard.ID);
         UnlockTracker.unlockCard(SmashStone.ID);
+        UnlockTracker.unlockCard(AthenaBane.ID);
 
         logger.info("Done adding cards!");
     }

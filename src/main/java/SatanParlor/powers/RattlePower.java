@@ -64,7 +64,7 @@ public class RattlePower extends AbstractPower implements CloneablePowerInterfac
        if (amount == 1){
            flash();
            // random enemy
-           if (Math.random() > 0.75){
+           if (Math.random() > 0.25){
                // apply weak
                AbstractDungeon.actionManager.addToBottom(new ApplyPowerToRandomEnemyAction(owner,new WeakPower(owner,1,false), 1, true, AbstractGameAction.AttackEffect.NONE));
            }
@@ -75,6 +75,7 @@ public class RattlePower extends AbstractPower implements CloneablePowerInterfac
            }
        }
        else{
+           flash();
            // all enemies
            Iterator var1 = AbstractDungeon.getMonsters().monsters.iterator();
            if (Math.random() > 0.5){

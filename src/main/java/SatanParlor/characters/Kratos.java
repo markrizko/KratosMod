@@ -140,6 +140,8 @@ public class Kratos extends CustomPlayer {
         retVal.add(Defend_K.ID);
         // 1 cyclone
         retVal.add(cyclone.ID);
+        // 1 curse
+        retVal.add(AthenaBane.ID);
         return retVal;
     }
 

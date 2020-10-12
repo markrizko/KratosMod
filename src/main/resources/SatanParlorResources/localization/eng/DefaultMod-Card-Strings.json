@@ -138,5 +138,9 @@
   "SatanParlor:SmashStone": {
     "NAME": "Health Stone",
     "DESCRIPTION": "Unplayable. NL Ethereal. NL Heal !M! HP. NL Random enemy heals !M! HP."
+  },
+  "SatanParlor:AthenaBane": {
+    "NAME": "Athena's Bane",
+    "DESCRIPTION": "Unplayable. NL At the end of your turn, lose ALL Vengeance. NL You cannot remove this card from your deck."
   }
 }
