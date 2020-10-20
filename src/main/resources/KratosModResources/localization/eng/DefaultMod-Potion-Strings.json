@@ -1,0 +1,10 @@
+{
+"KratosMod:PlaceholderPotion": {
+        "NAME": "Placeholder Potion",
+        "DESCRIPTIONS": ["Gain ", " At the end of your turn, lose ", " Strength."]
+},
+"KratosMod:angerpot": {
+        "NAME": "Anger Potion",
+        "DESCRIPTIONS": ["Gain ", " At the end of your turn, lose ", " Vengeance."]
+}
+}

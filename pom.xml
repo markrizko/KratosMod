@@ -3,8 +3,8 @@
 
     <!--Hello! You'll basically should only need to change these names and the steam path (just below)-->
     <!--The author name(s) as they appear in MTS and any other comments are in your ModTheSpire.json-->
-    <groupId>Kratos</groupId>
-    <artifactId>Kratos</artifactId>
+    <groupId>KratosMod</groupId>
+    <artifactId>KratosMod</artifactId>
     <name>Kratos Character Expansion</name>
     <version>0.0.4</version>
     <description>Creating Kratos from God of War. Deck is about 1/4 complete.</description>
